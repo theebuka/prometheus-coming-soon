@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import CustomCursor from './customCursor.js';
 import { Canvas } from '@react-three/fiber';
 import { ReactComponent as LogoC } from './images/logo-c.svg'; /* this is the logo to show on menu close */
