@@ -1,0 +1,18 @@
+:root{
+  --primary: #121212;
+  --secondary : #f1f1f1;
+  --accent-a: #121212e6;
+  --accent-b: #ffffff40;
+  --accent-c: #d3d3d3;
+  --accent-d: #121212b3;
+  --lh-a: 100%;
+  --lh-b: 150%;
+  --main-font: 'Neue Montreal Regular', sans-serif;
+  --main-font-bold: 'Neue Montreal Bold', sans-serif;
+  --main-font-light: 'Neue Montreal Light', sans-serif;
+  /* --sub-font: 'Manrope', sans-serif; */
+  --ls-a: -4%;
+  --fs-one: 4.62963vw;
+  --fs-two: 0.92593vw;
+  --fs-three: 0.81019vw;
+}
