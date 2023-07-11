@@ -68,6 +68,9 @@ nav.navigation {
   transition: all 0.3s ease;
 }
 .menu-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 48px;
   aspect-ratio: 1;
 }
@@ -140,7 +143,7 @@ div.menu.active ~ footer.contact div.social-links a {
 }
 div.home {
   background-color: var(--primary);
-  padding: 7.5201vh 0;
+  padding: 0 0 7.5201vh;
   position: relative;
   display: flex;
   flex-flow: column;
@@ -154,9 +157,26 @@ div.home div.heading-1 {
   color: var(--secondary);
   letter-spacing: var(--ls-a);
   line-height: var(--lh-a);
+  width: fit-content;
+  margin-top: 7.5201vh;
+  z-index: 2;
+  order: 1;
+  position: absolute;
+  top: 0;
 }
 div.home div.heading-1 span {
   display: block;
+}
+div.spline-object {
+  position: absolute;
+  /* width: 100%; */
+  height: fit-content;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  order: 2;
 }
 div.home div.heading-2 {
   font-family: var(--main-font-bold);
@@ -166,7 +186,9 @@ div.home div.heading-2 {
   letter-spacing: var(--ls-a);
   line-height: var(--lh-a);
   width: fit-content;
+  z-index: 2;
   margin-left: auto;
+  order: 3;
 }
 div.home div.heading-2 span {
   display: block;

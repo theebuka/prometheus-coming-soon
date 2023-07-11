@@ -348,3 +348,44 @@ const Home = () => {
 };
 
 // export default Home;
+
+
+    /* useEffect(() => {
+      const cursor = document.querySelector('.cursor');
+      if (!cursor) return;
+    
+      const onMouseMove = (e) => {
+        const updatePosition = () => {
+          cursor.style.left = `${e.clientX}px`;
+          cursor.style.top = `${e.clientY}px`;
+        };
+        requestAnimationFrame(updatePosition);
+      };
+      document.addEventListener('mousemove', onMouseMove);
+    
+      document.addEventListener("mousemove", function (event) {
+        const hoverElements = document.querySelectorAll(".hover-reverse-color");
+        hoverElements.forEach((element) => {
+          const rect = element.getBoundingClientRect();
+          const inElement =
+            event.clientX >= rect.left &&
+            event.clientX <= rect.right &&
+            event.clientY >= rect.top &&
+            event.clientY <= rect.bottom;
+          if (inElement) {
+            const xPos = event.clientX - rect.left;
+            element.style.setProperty("--cursor-x", `${xPos}px`);
+            element.style.setProperty("--before-width", `${xPos}px`);
+            element.classList.add("cursor-hover");
+          } else {
+            element.style.removeProperty("--cursor-x");
+            element.style.removeProperty("--before-width");
+            element.classList.remove("cursor-hover");
+          }
+        });
+      });      
+
+    return () => {
+      document.removeEventListener('mousemove', onMouseMove);
+    };
+  }, []); */

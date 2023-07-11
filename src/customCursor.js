@@ -52,13 +52,13 @@ const CustomCursor = () => {
   return (
     <div className="cursor">
       <div className="cursor__ball cursor__ball--big" ref={bigBallRef}>
-        <svg height="40" width="40">
-          <circle cx="20" cy="20" r="20" strokeWidth="0"></circle>
+        <svg height="64" width="64">
+          <circle cx="30" cy="30" r="30" strokeWidth="0"></circle>
         </svg>
       </div>
       <div className="cursor__ball cursor__ball--small" ref={smallBallRef}>
-        <svg height="10" width="10">
-          <circle cx="5" cy="5" r="4" strokeWidth="0"></circle>
+        <svg height="4" width="4">
+          <circle cx="2" cy="2" r="2" strokeWidth="0"></circle>
         </svg>
       </div>
     </div>

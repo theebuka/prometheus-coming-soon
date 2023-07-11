@@ -12,7 +12,7 @@ html {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10050;
+    z-index: 100050;
   }
   
   .cursor {
